@@ -1,7 +1,7 @@
 import os
 
 from litellm import completion
-from prompt import system_prompt, user_prompt
+from core.prompt import system_prompt, user_prompt
 
 
 class LLM:

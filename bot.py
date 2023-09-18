@@ -34,7 +34,6 @@ async def chat(ctx):
         return
 
     query = extract_query(ctx.message.content)
-    print(query)
     ai_response = llm.completion(question=query)['choices'][0]['message']['content']
 
     await ctx.send(ai_response)
