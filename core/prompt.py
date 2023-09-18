@@ -13,3 +13,9 @@ user_prompt = """
 Question: {question}
 
 Answer: """
+
+response_template = """
+Hey {user},
+
+{response}
+"""

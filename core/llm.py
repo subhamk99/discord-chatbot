@@ -19,3 +19,9 @@ class LLM:
             {"content": user_prompt.format(question=question), "role": "user"}
         )
         return completion(model=self.model, messages=self.messages)
+
+    def stream_completion(self, question):
+        self.messages.append(
+            {"content": user_prompt.format(question=question), "role": "user"}
+        )
+        return completion(model=self.model, messages=self.messages,stream=True)
